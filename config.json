@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "logLevel": "INFO",
+  "regCmd": "C:\\Windows\\System32\\reg.exe",
+  "execAfterLogon": "5s",
+  "execAtInterval": "1h",
+  "execAtStartup": true
+}
