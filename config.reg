@@ -18,3 +18,12 @@ Windows Registry Editor Version 5.00
 ; enable importing certs without requiring a password per-use
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography]
 "forcekeyprotection"=dword:00000000
+
+; unmanage browsers
+;[-HKEY_CURRENT_USER\Software\Google\Chrome]
+;[-HKEY_LOCAL_MACHINE\Software\Google\Chrome]
+[-HKEY_CURRENT_USER\Software\Policies\Google\Chrome]
+[-HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
+[-HKEY_LOCAL_MACHINE\Software\Policies\Google\Update]
+[-HKEY_LOCAL_MACHINE\Software\WOW6432Node\Google\Enrollment]
+[-HKEY_LOCAL_MACHINE\Software\WOW6432Node\Google\Update\ClientState\{430FD4D0-B729-4F61-AA34-91526481799D}]
